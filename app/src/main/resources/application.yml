@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: spring-cloud-eureka-feign-client
+server:
+  port: 8080
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+
+
+
+thymeleaf:
+    check-template-location: true
+    prefix: classpath:/resources/templates/
+    suffix: .html
+    mode: LEGACYHTML5
+    encoding: UTF-8
+    content-type: text/html 
+    cache: true
